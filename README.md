@@ -10,7 +10,7 @@
 
 - Inventory system that's fully networked with the SQL database with grid GUI
 
-- Vehicle system and car dealer once again networked with the SQL database
+- Vehicle system and car dealer networked with the SQL database
 
 - Passenger seats in cars(Big thanks to Fexa for the awesome seats position tool he made)
 
