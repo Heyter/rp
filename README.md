@@ -64,7 +64,7 @@
 - rp_saveprofile - Saves the profile of the player
 - rp_givemoney #num - Gives the player money
 - rp_setrank #rank - Sets the rank of the player(Rank 5 and over is considered admin)
-- rp_getrank_sv(_cl) - Prints the rank of the player
+- rp_getrank_sv - Prints the rank of the player
 
 ### Vehicles
 
@@ -81,7 +81,7 @@
 
 - rp_rentproperty #id - Rents the property
 - rp_vacantproperty #id - Vacants the property
-- rp_getdoor - Prints the doors information for the property system(Vector() and Model
+- rp_getdoor - Prints the doors information for the property system format
 - rp_getowner - Prints the current owner of the door
 
 ### Useful commands
