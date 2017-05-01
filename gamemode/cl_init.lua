@@ -106,7 +106,7 @@ function GM.ActionMenu(  )
 		end
 	end
 	
-	if LocalPlayer():IsAdmin() then
+	if LocalPlayer():Isadmin() then
 		local adminmenu = actionmenu:AddSubMenu("Admin")	
 
 		for k, v in pairs(ADMIN_PLUGIN) do

@@ -43,7 +43,7 @@ function PANEL:AddSubMenu( string )
 						reasonmenu:AddOption("Time(Minutes)")
 						reasonmenu:AddSpacer()
 						for _,w  in pairs(plugin.DefaultTime) do
-							reasonmenu:AddOption(''..parseAdminTime(w), function () plugin.Func(u, v, w) end)
+							reasonmenu:AddOption(''..parseAdminTime(w), function() plugin.Func(u, v, w) end)
 						end
 					else
 						usermenu:AddOption(''..v, function() plugin.Func(u, v) end)

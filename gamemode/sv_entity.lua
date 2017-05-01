@@ -1,4 +1,4 @@
-Entity = FindMetaTable("Entity")
+local Entity = FindMetaTable("Entity")
 
 function Entity:Setowner(ent)
 	self.Owner = ent

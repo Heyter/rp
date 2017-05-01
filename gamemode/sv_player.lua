@@ -1,4 +1,4 @@
-Player = FindMetaTable("Player")
+local Player = FindMetaTable("Player")
 
 function Player:LoadProfile()
 

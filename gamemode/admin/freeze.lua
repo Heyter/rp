@@ -2,7 +2,7 @@ local PLUGIN = { }
 PLUGIN.ID = 3
 PLUGIN.Name = "Freeze"
 PLUGIN.Func = function( ply )
-	if IsValid(ply) && LocalPlayer():IsAdmin() then
+	if IsValid(ply) && LocalPlayer():Isadmin() then
 		net.Start("freeze_player")
 			net.WriteEntity( ply )
 		net.SendToServer()

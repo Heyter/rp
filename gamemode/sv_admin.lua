@@ -26,7 +26,7 @@ util.AddNetworkString("kick_player")
 net.Receive( "kick_player" , function(len, pl)
 	local ply = net.ReadEntity()
 
-	if not IsValid(ply) || not pl:IsAdmin() || pl == ply then return end
+	if not IsValid(ply) || not pl:Isadmin() || pl == ply then return end
 
 	ply:Kick(net.ReadString())
 
@@ -40,8 +40,8 @@ net.Receive( "ban_player", function(len, pl)
 	local int = net.ReadInt(32)
 	local string = net.ReadString()
 
-	if not IsValid(ply) || not pl:IsAdmin() then return end
-
+	if not IsValid(ply) || not pl:Isadmin() then return end
+	print("ok")
 	ply:RealBan(int, string)
 end)
 
@@ -49,7 +49,7 @@ util.AddNetworkString("freeze_player")
 
 net.Receive( "freeze_player", function(len, pl)
 	local ply = net.ReadEntity()
-	if not IsValid(ply) || not pl:IsAdmin() then return end
+	if not IsValid(ply) || not pl:Isadmin() then return end
 
 	if not ply.Frozen then
 		ply:Freeze(true)

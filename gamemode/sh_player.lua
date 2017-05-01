@@ -71,7 +71,7 @@ if CLIENT then
 	end)
 end
 
-function Player:IsAdmin()
+function Player:Isadmin()
 	if SERVER then
 		return self.Rank >= 5 
 	end
